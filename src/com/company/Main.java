@@ -11,13 +11,12 @@ public class Main {
         removeDuplicate(arr);
     }
 /* Function for the remove the duplicate numbers or element from the arrays. */
-    public static int removeDuplicate(int[] arr){
+    public static void removeDuplicate(int[] arr){
         LinkedHashSet<Integer> set = new LinkedHashSet<>();
         for (int i = 0 ; i < arr.length -1 ; i++){
             set.add(arr[i]);
         }
         System.out.print(set+" ");
-        return 0;
     }
 }
 
