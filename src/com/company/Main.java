@@ -1,16 +1,23 @@
 package com.company;
 
+import java.util.*;
+
 public class Main {
 
     public static void main(String[] args) {
         System.out.println("Hello World");
 
-        int[] arr= {21,32,123,2,321,23,2};
-
-        for(int i = 0; i < arr.length -1; i++){
-            System.out.println(arr[i]);
+        int[] arr= {1,2,1,2,1,3,4,5,6,7,1,2};
+        int result = removeDuplicate(arr);
+    }
+/* Function for the remove the duplicate numbers or element from the arrays. */
+    public static int removeDuplicate(int[] arr){
+        LinkedHashSet<Integer> set = new LinkedHashSet<>();
+        for (int i = 0 ; i < arr.length -1 ; i++){
+            set.add(arr[i]);
         }
-
+        System.out.print(set+" ");
+        return 0;
     }
 }
 
