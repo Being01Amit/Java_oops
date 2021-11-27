@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Hello World");
 
         int[] arr= {1,2,1,2,1,3,4,5,6,7,1,2};
-        int result = removeDuplicate(arr);
+        removeDuplicate(arr);
     }
 /* Function for the remove the duplicate numbers or element from the arrays. */
     public static int removeDuplicate(int[] arr){
