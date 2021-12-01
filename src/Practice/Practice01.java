@@ -34,6 +34,7 @@ class Practice {
 
         String Name = "Amit";
         System.out.println(Name);
+        System.out.println("Baba Yaga");
 
     }
 }
