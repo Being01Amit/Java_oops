@@ -1,4 +1,4 @@
-package Practice.OperationOnArrays;
+package Practice;
 import java.io.*;
 public class IOClass {
     public static void main(String[] args) throws IOException {
@@ -28,7 +28,7 @@ public class IOClass {
 
 /* In this Line of the Code we are storing the Buffer Reader input into String variable and printing them accordingly   */
         String s;
-       // In this while we are ruing the loop until the loop reach the last input
+       // In this while we are running the loop until the loop reach the last input
         while ((s = br.readLine()) != null){
             System.out.println(s);
         }
