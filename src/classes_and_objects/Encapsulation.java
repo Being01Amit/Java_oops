@@ -21,12 +21,11 @@ class Laptop {
     public void setPrice(int price){
 
         /* In this line of code we are achieving the Data hiding but with the protecting the data
-        That is is Called Encapsulation */
+        That is  Called Encapsulation */
         if(!isAdmin){
             System.out.println("Your Not Admin");
         }else {
             this.price = price;
         }
     }
-
 }
