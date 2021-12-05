@@ -13,17 +13,29 @@ public class IOClass {
         // CLosing the buffer Writer so this object no longer take input or write function
         bw.close();
 
+
+
         BufferedReader br = new BufferedReader(
                 new FileReader("/home/being01amit/Desktop/Test Inputs/Output.txt/")
         );
+
+
+        /* Now we are copy file content into the new file */
+        BufferedWriter br1 = new BufferedWriter(
+                new FileWriter("/home/being01amit/Desktop/Test Inputs/Output-copy.txt/")
+        );
+
+
 /* In this Line of the Code we are storing the Buffer Reader input into String variable and printing them accordingly   */
         String s;
-       // In this while we are runnig the loop until the loop reach the last input
+       // In this while we are ruing the loop until the loop reach the last input
         while ((s = br.readLine()) != null){
             System.out.println(s);
         }
         // in this line of code we are closing the Buffer Reader Object
         br.close();
+        br1.close();
+
 
     }
 
